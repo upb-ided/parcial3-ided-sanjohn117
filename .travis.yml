@@ -1,4 +1,4 @@
-﻿language: csharp
+language: csharp
 solution: Arrays.sln
 install:
   - nuget restore Arrays.sln
