@@ -1,0 +1,6 @@
+/Users/halzate93/Projects/Arrays/Arrays/obj/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs
+/Users/halzate93/Projects/Arrays/Arrays/bin/Debug/Arrays.dll.mdb
+/Users/halzate93/Projects/Arrays/Arrays/bin/Debug/Arrays.dll
+/Users/halzate93/Projects/Arrays/Arrays/obj/Debug/Arrays.dll
+/Users/halzate93/Projects/Arrays/Arrays/obj/Debug/Arrays.dll.mdb
+/Users/halzate93/Projects/Arrays/Arrays/bin/Debug/nunit.framework.dll
