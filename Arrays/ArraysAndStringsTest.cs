@@ -95,9 +95,9 @@ namespace Arrays
         }
 
         //Prueba del punto 10
-        [TestCase(1, 5, 10, 15, 20, 40, "PAR")]
-        [TestCase(20, 15, 40, 90, 120, 200, "PAR")]
-        [TestCase(1, 3, 5, 7, 9, 11, "IMPAR")]
+        [TestCase(new int[] { 1, 5, 10, 15, 20, 40 }, "PAR")]
+        [TestCase(new int[] { 20, 15, 40, 90, 120, 200 }, "PAR")]
+        [TestCase(new int[] { 1, 3, 5, 7, 9, 11 }, "IMPAR")]
         public void TestProductOfElementsIsOddOrEven(int[] inputArr, string compareResultWith)
         {
             Assert.AreEqual(compareResultWith, tested.ProductOfElementsIsOddOrEven(inputArr));
