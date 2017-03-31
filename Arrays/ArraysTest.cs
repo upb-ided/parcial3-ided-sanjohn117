@@ -5,7 +5,6 @@ namespace Arrays
     [TestFixture()]
     public class ArraysTest
     {
-        private Arrays toTest;
         private Tester toTestAssignment;
 
         [SetUp]
@@ -14,29 +13,6 @@ namespace Arrays
             //toTest = new Arrays();
             toTestAssignment = new Tester();
         }
-
-        /*
-         * UNDONE: Disabled to clean test run.
-		[Test()]
-		public void AveragePositiveNumbers ()
-		{
-			int[] numbers = new int[] { 1, 2, 3 };
-			int average = toTest.Average (numbers);
-			Assert.AreEqual (2, average);
-		}
-
-		[Test()]
-		public void SortReversedArray ()
-		{
-			int[] numbers = new int[] { 3, 2, 1 };
-			int[] sorted  = toTest.Sort (numbers);
-			Assert.AreEqual(new int[] { 1, 2, 3}, sorted);
-		}
-        */
-
-        private static readonly int[,] testDiagonalMatrixA = { { 0, 1 }, { 1, 0 } };
-        private static readonly int[,] testDiagonalMatrixB = { { 0, 1 }, { 1, 0 } };
-        private static readonly int[,] testDiagonalMatrixC = { { 0, 1 }, { 1, 0 } };
 
         //Prueba del punto 3
         [TestCase("anitalavalatina", 'a', 6)]
@@ -69,7 +45,7 @@ namespace Arrays
         [TestCase(new int[] { 1, 9, 12 }, 2)]
         [TestCase(new int[] { 1, 4, 16 }, 0)]
         [TestCase(new int[] { 3, 8, 12, 17, 21, 26, 32, 50, 69 }, 4)]
-        public void TestMultiplesOfThreeInArray(int[] inputArr, bool compareResultWith)
+        public void TestMultiplesOfThreeInArray(int[] inputArr, int compareResultWith)
         {
             Assert.AreEqual(compareResultWith, toTestAssignment.MultiplesOfThreeInArray(inputArr));
         }
@@ -78,7 +54,7 @@ namespace Arrays
         [TestCase(3, 2, false)]
         [TestCase(50, 10, true)]
         [TestCase(15625, 25, true)]
-        public void TestNumberIsMuktipleOf(int inputNum, int inputFactor, int compareResultWith)
+        public void TestNumberIsMuktipleOf(int inputNum, int inputFactor, bool compareResultWith)
         {
             Assert.AreEqual(compareResultWith, toTestAssignment.NumberIsMultipleOf(inputNum, inputFactor));
         }
@@ -96,7 +72,7 @@ namespace Arrays
         [TestCase("murciélago", 5)]
         [TestCase("esternocleidomastoideo", 11)]
         [TestCase("universidad", 5)]
-        public void TestCountVowelsInString(string inputString, bool compareResultWith)
+        public void TestCountVowelsInString(string inputString, int compareResultWith)
         {
             Assert.AreEqual(compareResultWith, toTestAssignment.CountVowelsInString(inputString));
         }
@@ -105,7 +81,7 @@ namespace Arrays
         [TestCase("murciélago", 5)]
         [TestCase("esternocleidomastoideo", 11)]
         [TestCase("universidad", 6)]
-        public void TestCountConsonantInString(string inputString, bool compareResultWith)
+        public void TestCountConsonantInString(string inputString, int compareResultWith)
         {
             Assert.AreEqual(compareResultWith, toTestAssignment.CountConsonantInString(inputString));
         }
@@ -122,7 +98,7 @@ namespace Arrays
         //Prueba del punto 10
         [TestCase(new int[] { 1, 5, 10, 15, 25, 40, 60 }, "PAR")]
         [TestCase(new int[] { 3, 6, 9, 12 }, "PAR")]
-        [TestCase(new int[] { 1, 3, 5, 7, 9, 11}, "IMPAR")]
+        [TestCase(new int[] { 1, 3, 5, 7, 9, 11 }, "IMPAR")]
         public void TestProductOfElementsIsOddOrEven(int[] inputArr, string compareResultWith)
         {
             Assert.AreEqual(compareResultWith, toTestAssignment.ProductOfElementsIsOddOrEven(inputArr));
