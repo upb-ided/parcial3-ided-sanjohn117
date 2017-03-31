@@ -1,0 +1,7 @@
+D:\Documents\GitHub\arrays\Arrays\bin\Debug\Arrays.dll
+D:\Documents\GitHub\arrays\Arrays\bin\Debug\Arrays.pdb
+D:\Documents\GitHub\arrays\Arrays\bin\Debug\nunit.framework.dll
+D:\Documents\GitHub\arrays\Arrays\bin\Debug\nunit.framework.xml
+D:\Documents\GitHub\arrays\Arrays\obj\Debug\Arrays.csprojResolveAssemblyReference.cache
+D:\Documents\GitHub\arrays\Arrays\obj\Debug\Arrays.dll
+D:\Documents\GitHub\arrays\Arrays\obj\Debug\Arrays.pdb
