@@ -1,6 +1,6 @@
 ﻿namespace Arrays
 {
-    internal class Tester
+    internal class ArraysAndStrings
     {
         public int CountCharInString(string inputString, char inputChar)
         {

@@ -4,3 +4,5 @@
 /Users/halzate93/Projects/Arrays/Arrays/obj/Debug/Arrays.dll
 /Users/halzate93/Projects/Arrays/Arrays/obj/Debug/Arrays.dll.mdb
 /Users/halzate93/Projects/Arrays/Arrays/bin/Debug/nunit.framework.dll
+/Users/halzate93/Projects/Arrays/Arrays/bin/Debug/Arrays.pdb
+/Users/halzate93/Projects/Arrays/Arrays/obj/Debug/Arrays.pdb

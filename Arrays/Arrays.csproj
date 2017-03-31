@@ -31,14 +31,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ArraysTest.cs" />
-    <Compile Include="Arrays.cs" />
-    <Compile Include="Tester.cs" />
-    <Compile Include="TesterTest.cs" />
+    <Compile Include="ArraysAndStrings.cs" />
+    <Compile Include="ArraysAndStringsTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
-    <None Include="..\travis.yml" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />

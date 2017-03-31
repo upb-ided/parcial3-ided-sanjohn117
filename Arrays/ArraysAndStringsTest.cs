@@ -3,18 +3,14 @@
 namespace Arrays
 {
     [TestFixture()]
-    internal class TesterTest
+    internal class ArraysAndStringsTest
     {
-        private Tester toTestAssignment;
-
-        private static readonly int[,] testDiagonalMatrixA = { { 0, 1 }, { 1, 0 } };
-        private static readonly int[,] testDiagonalMatrixB = { { 0, 1 }, { 1, 0 } };
-        private static readonly int[,] testDiagonalMatrixC = { { 0, 1 }, { 1, 0 } };
+		private ArraysAndStrings tested;
 
         [SetUp]
         public void Prepare()
         {
-            toTestAssignment = new Tester();
+            tested = new ArraysAndStrings();
         }
 
         //Prueba del punto 1
@@ -23,7 +19,7 @@ namespace Arrays
         [TestCase("holAmundo", 'a', 0)]
         public void TestCountCharacterInString(string inputString, char inputChar, int compareResultWith)
         {
-            Assert.AreEqual(compareResultWith, toTestAssignment.CountCharInString(inputString, inputChar));
+            Assert.AreEqual(compareResultWith, tested.CountCharInString(inputString, inputChar));
         }
 
         [TestCase(2, 4)]
@@ -31,7 +27,7 @@ namespace Arrays
         [TestCase(1081, 2048)]
         public void TestGetNextPowerOfTwo(int currentNumber, int compareResultWith)
         {
-            Assert.AreEqual(compareResultWith, toTestAssignment.NextPowerOfTwo(currentNumber));
+            Assert.AreEqual(compareResultWith, tested.NextPowerOfTwo(currentNumber));
         }
 
         [TestCase(3, 2)]
@@ -39,7 +35,7 @@ namespace Arrays
         [TestCase(20, 6765)]
         public void TestFibonacciAtN(int fibonacciPosition, int compareResultWith)
         {
-            Assert.AreEqual(compareResultWith, toTestAssignment.FibonacciAtN(fibonacciPosition));
+            Assert.AreEqual(compareResultWith, tested.FibonacciAtN(fibonacciPosition));
         }
 
         [TestCase(new int[] { 1, 9, 12 }, 2)]
@@ -47,7 +43,7 @@ namespace Arrays
         [TestCase(new int[] { 3, 8, 12, 17, 21, 26, 32, 50, 69 }, 4)]
         public void TestMultiplesOfThreeInArray(int[] inputArr, bool compareResultWith)
         {
-            Assert.AreEqual(compareResultWith, toTestAssignment.MultiplesOfThreeInArray(inputArr));
+            Assert.AreEqual(compareResultWith, tested.MultiplesOfThreeInArray(inputArr));
         }
 
         [TestCase(3, 2, false)]
@@ -55,31 +51,15 @@ namespace Arrays
         [TestCase(15625, 25, true)]
         public void TestNumberIsMuktipleOf(int inputNum, int inputFactor, int compareResultWith)
         {
-            Assert.AreEqual(compareResultWith, toTestAssignment.NumberIsMultipleOf(inputNum, inputFactor));
+            Assert.AreEqual(compareResultWith, tested.NumberIsMultipleOf(inputNum, inputFactor));
         }
-
-        /*[TestCase(testDiagonalMatrixA, true)]
-        [TestCase(testDiagonalMatrixB, false)]
-        [TestCase(testDiagonalMatrixC, true)]
-        public void TestMatrixIsIdentity(int[,] inputMatrix, bool compareResultWith)
-        {
-            Assert.AreEqual(compareResultWith, toTest.MatrixIsIdentity(inputMatrix));
-        }
-
-        [TestCase()]
-        [TestCase()]
-        [TestCase()]
-        public void TestElementsInDiagonalAreEqual(int[,] inputMatrix, bool compareResultWith)
-        {
-            Assert.AreEqual(compareResultWith, toTest.ElementsInDiagonalAreEqual(inputMatrix));
-        }*/
 
         [TestCase(new int[] { 1}, 1)]
         [TestCase(new int[] { 1 }, 1)]
         [TestCase(new int[] { 1 }, 1)]
         public void TestOperateElementsInArray(int[] inputArr, int compareResultWith)
         {
-            Assert.AreEqual(compareResultWith, toTestAssignment.OperateElementsInArray(inputArr));
+            Assert.AreEqual(compareResultWith, tested.OperateElementsInArray(inputArr));
         }
 
         [TestCase("murciélago", 5)]
@@ -87,7 +67,7 @@ namespace Arrays
         [TestCase("universidad", 5)]
         public void TestCountVowelsInString(string inputString, bool compareResultWith)
         {
-            Assert.AreEqual(compareResultWith, toTestAssignment.CountVowelsInString(inputString));
+            Assert.AreEqual(compareResultWith, tested.CountVowelsInString(inputString));
         }
 
         [TestCase()]
@@ -95,7 +75,7 @@ namespace Arrays
         [TestCase()]
         public void TestCountConsonantInString(string inputString, bool compareResultWith)
         {
-            Assert.AreEqual(compareResultWith, toTestAssignment.CountConsonantInString(inputString));
+            Assert.AreEqual(compareResultWith, tested.CountConsonantInString(inputString));
         }
 
         [TestCase()]
@@ -103,7 +83,7 @@ namespace Arrays
         [TestCase()]
         public void TestStringHasOddOrEvenCharCount(string inputString, bool compareResultWith)
         {
-            Assert.AreEqual(compareResultWith, toTestAssignment.StringHasOddOrEvenCharCount(inputString));
+            Assert.AreEqual(compareResultWith, tested.StringHasOddOrEvenCharCount(inputString));
         }
 
         [TestCase()]
@@ -111,7 +91,7 @@ namespace Arrays
         [TestCase()]
         public void TestProductOfElementsIsOddOrEven(int[] inputArr, bool compareResultWith)
         {
-            Assert.AreEqual(compareResultWith, toTestAssignment.ProductOfElementsIsOddOrEven(inputArr));
+            Assert.AreEqual(compareResultWith, tested.ProductOfElementsIsOddOrEven(inputArr));
         }
 
         [TestCase()]
@@ -119,7 +99,7 @@ namespace Arrays
         [TestCase()]
         public void TestRacerGotFirst(float d1, float t1, float d2, float t2, string compareResultWith)
         {
-            Assert.AreEqual(compareResultWith, toTestAssignment.RacerGotFirst(d1, t1, d2, t2));
+            Assert.AreEqual(compareResultWith, tested.RacerGotFirst(d1, t1, d2, t2));
         }
     }
 }
