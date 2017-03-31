@@ -42,7 +42,7 @@
 
         public bool MatrixIsIdentity(int[,] inputMatrix)
         {
-            bool result = false;
+            bool result = true;
 
             return result;
         }
