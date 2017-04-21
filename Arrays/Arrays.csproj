@@ -31,8 +31,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ArraysAndStrings.cs" />
-    <Compile Include="ArraysAndStringsTest.cs" />
+    <Compile Include="MatrixOperator.cs" />
+    <Compile Include="MatrixOperatorTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
