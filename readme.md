@@ -8,9 +8,9 @@ Fundamentos de Programación
 
 Parcial 3
 
-Nombre: (Edite este archivo llenando este dato)
+Nombre: Santiago Aguaray Clavijo Gaviria
 
-ID: (Edite este archivo llenando este dato)
+ID: 000318672
 
 Fecha: Abril 21 de 2017
 
