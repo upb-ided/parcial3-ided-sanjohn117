@@ -33,7 +33,7 @@ namespace Parcial3_Base
 
     internal class MatrixOperator
     {
-        /// <summary>
+        
         /// Suma las matrices parámetro.
         /// Valor del punto: 1.0 / 5.0
         /// </summary>
@@ -45,6 +45,23 @@ namespace Parcial3_Base
             int[,] result = null;
 
             if (result != null)
+
+                for (int i = 0; i < matrix.GetLength(0); i++)
+                {
+                    for (int j = 0; j < matrix.GetLength(0); j++)
+                    {
+                        if (matrixA.Length = matrixB.Length)
+                        {
+                            AddMatrix = matrixA + martrixB;
+                        }
+                        else
+                        {
+                            Console.WriteLine("Matrix is null");
+                        }
+                        int[,] result = new int[i, j];
+                    }
+                }
+         
             {
                 result.PrintMatrixValues();
             }
@@ -65,6 +82,23 @@ namespace Parcial3_Base
 
             if (result != null)
             {
+                for (int i = 0; i < matrix.GetLength(0); i++)
+                {
+                    for (int i = 0; i < matrix.GetLength(1); i++)
+                    {
+                        for (int i = 0; i < scalar.GetLength(0); i++)
+                        {
+                            if (matrix != scalar)
+                            {
+                                MultiplyMatrixByScalar = matrix * scalar;
+                            }
+                        }
+                        int[,] result = new int[i, j];
+                    }
+                    
+                }
+            }
+            {
                 result.PrintMatrixValues();
             }
 
@@ -83,6 +117,22 @@ namespace Parcial3_Base
             int[,] result = null;
 
             if (result != null)
+            {
+                for (int i = 0; i < matrix.GetLength(0); i++)
+                {
+                    for (int j = 0; j < matrix.GetLength(0); j++)
+                    {
+                        if (matrixA.Length = matrixB.Length)
+                            {
+                                MultiplyMatrices = matrixA * martrixB;
+                            }
+                        else
+                        {
+                            Console.WriteLine("Matrix is null");
+                        }
+                    }
+                }
+            }
             {
                 result.PrintMatrixValues();
             }
