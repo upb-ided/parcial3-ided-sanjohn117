@@ -1,0 +1,23 @@
+Punto 1(AddMatrix)
+* La validación de las matrices es correcta, pero no está en el lugar correcto. Se supone que debe hacerse *antes* de empezar a operar.
+* La instrucción que aplica la operación es correcta; no obstante, al final el resultado siempre será una matriz vacía de tamaño [i,j] debido a la última instrucción del 'for' más interno.
+Total: 0.6 / 1.0
+
+Punto 2(MultiplyMatrixByScalar)
+* El acercamiento es correcto... Hasta que iterás sobre 'scalar'. 'scalar' es un entero, y un entero no se itera. Iterar sobre'scalar' forzará el algoritmo a repetirse 'scalar' veces.
+* La validación 'matrix == scalar' es incorrecta. No podés comparar una matriz de enteros con un entero.
+* La instrucción que aplica la operación es correcta.
+Total: 0.6 / 1.0
+
+Punto 3(MultiplyMatrices)
+* No se valida que las matrices sean operables.
+* No se inicializa la matriz resultado.
+* La iteración es incorrecta. Solo se itera sobre las columnas de una matriz 'matrix' que no se define en ninguna parte.
+* La instrucción que ejecuta la instrucción es incorrecta. Esta no es la forma de multiplicar matrices, y 'MultiplyMatrices' es el nombre de la función, no un valor a asignar.
+Total: 0.4 / 2.0
+
+Punto 4(MixMatrix)
+* No presenta solución
+Total: 0.0 / 1.0
+
+Total evaluación: 1.6 / 5.0
